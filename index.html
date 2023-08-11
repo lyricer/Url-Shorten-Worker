@@ -7,13 +7,21 @@
   <title>lyricn短链</title>
   <meta name="description" content="简单免费搭建属于你自己的无服务器短链接平台">
   <style>
-    /* 添加背景图片和透明度 */
-    body {
-      background-image: url("https://milet.wiki/wp-content/uploads/2023/07/1688605808-FIX_milet_FinalCall_%E3%82%B5%E3%83%96%E3%82%A2%E3%83%BC%E5%86%99.jpg");
-      background-size: cover; /* 调整图片大小以填充整个屏幕 */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: rgba(0, 0, 0, 0.3); /* 30%的透明度黑色背景 */
+  /* 设置背景图片 */
+  .background-image {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      background-image: url("images/FIX_milet_FinalCall_メインアー写.jpg");
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0.7;
     }
     * {
       margin: 0;
@@ -77,6 +85,8 @@
   </style>
 </head>
 <body>
+  <!-- 添加背景图片 -->
+  <div class="background-image"></div>
   <div class="card">
     <h5 class="card-header">lyricn短链</h5>
     <div class="card-body">
